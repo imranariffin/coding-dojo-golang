@@ -105,3 +105,7 @@ go test # Run all tests
 go test -run 'TestTwoRowOneBothSimilar' # Run 'TestTwoRowOneBothSimilar' only
 go test -run 'TestTwoRowOneBothSimilar|TestTwoRowOneBothSimilar' # Run 'TestTwoRowOneBothSimilar' & 'TestTwoRowOneBothSimilar' only
 ```
+
+#### Credit
+
+This problem is an extension of the "Unique Email Addresses" posted on LeetCode [here](https://leetcode.com/problems/unique-email-addresses/).
