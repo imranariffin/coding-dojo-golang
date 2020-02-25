@@ -63,3 +63,56 @@ func TestArbitraryOrder(t *testing.T) {
 	}
 }
 
+func TestAverageEmptyArray(t *testing.T) {
+	input := []int{};
+	want := float64(0);
+
+	got := average(input);
+
+	if got != want {
+		t.Errorf("wanted %f but got %f", want, got);
+	}
+}
+
+func TestAverageFewPositiveEvenNumbers(t *testing.T) {
+	input := []int{2,4};
+	want := float64(3);
+
+	got := average(input);
+
+	if got != want {
+		t.Errorf("wanted %f but got %f", want, got);
+	}
+}
+
+func TestAverageFewPositiveOddNumbers(t *testing.T) {
+	input := []int{3,2};
+	want := 2.5;
+
+	got := average(input);
+
+	if got != want {
+		t.Errorf("wanted %f but got %f", want, got);
+	}
+}
+
+func TestAverageManyPositiveNegativeNumbers(t *testing.T) {
+	input := []int{
+		-6,
+		1,
+		5,
+		3,
+		-4,
+		7,
+		2,
+		2,
+	};
+	want := float64(1.25);
+
+	got := average(input);
+
+	if got != want {
+		t.Errorf("wanted %f but got %f", want, got);
+	}
+}
+
