@@ -4,6 +4,8 @@
 
 If you're not familiar with Go or you'd like a good warm up the official [Tour of Go](https://tour.golang.org/welcome/1) is a good place to hangout at before starting this problem.
 
+Also see these [warm-up problems](/warmups.go) with the respective [unit tests](warmups_test.go) to familiarize yourself with the language and its built-in testing environment.
+
 ## Problem
 ### CSV of Similar Email Addresses
 
