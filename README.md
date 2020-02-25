@@ -68,7 +68,7 @@ Given a CSV of emails as input, can you complete the following function to retur
 You can assume each email provided is valid. An input will have a consistent number of emails in each row but different test cases may have different number of emails in a row.
 
 ```go
-func GetSimilarEmailsCount(emailCSV []string) int {
+func getSimilarEmailsCount(emailCSV []string) int {
   // complete the function
 }
 ```
