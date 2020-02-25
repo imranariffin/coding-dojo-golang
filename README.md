@@ -1,5 +1,9 @@
 # Coding Dojo Golang
 
+## Golang
+
+If you're not familiar with Go or you'd like a good warm up the official [Tour of Go](https://tour.golang.org/welcome/1) is a good place to hangout at before starting this problem.
+
 ## Problem
 ### CSV of Similar Email Addresses
 
