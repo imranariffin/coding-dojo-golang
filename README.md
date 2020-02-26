@@ -29,7 +29,7 @@ golang.dev@Coding.dojo.com # Invalid
 golang.dev@coding.dojo.com # Valid
 ```
 
-A valid email address may contain '+'`'s & `'.'`'s in the **local name**.
+A valid email address may contain `'+'`'s & `'.'`'s in the **local name**.
 
 E.g. All email addresses are valid:
 ```
