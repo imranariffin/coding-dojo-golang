@@ -65,9 +65,9 @@ golangdev@coding.dojo.com
 
 #### Question
 
-Given a CSV of emails as input, can you complete the following function to return number of rows with emails that are all similar?
+Given a CSV of emails as input, can you complete the following function to return the number of rows with emails that are all similar?
 
-You can assume each email provided is valid. An input will have a consistent number of emails in each row but different test cases may have different number of emails in a row.
+You can assume each email provided is valid. An input will have a consistent number of emails in each row but different test cases may have different number of emails in each row.
 
 ```go
 func getSimilarEmailsCount(emailCSV []string) int {
@@ -90,6 +90,7 @@ fmt.Println(got == want);
 
 #### Sample test case 2
 ```go
+import "fmt"
 input := []string{
   "alice@mail.com,alic.e@mail.com", // all similar - accepted
   "bob@mail.com,b.o.b@mail.com", // all similar - accepted
@@ -110,4 +111,4 @@ go test -run 'TestTwoRowOneBothSimilar|TestTwoRowOneBothSimilar' # Run 'TestTwoR
 
 #### Credit
 
-This problem is an extension of the "Unique Email Addresses" posted on LeetCode [here](https://leetcode.com/problems/unique-email-addresses/).
+This problem is an extension of the "Unique Email Addresses" posted on [LeetCode](https://leetcode.com/problems/unique-email-addresses/).
