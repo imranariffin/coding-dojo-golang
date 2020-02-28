@@ -1,6 +1,8 @@
 package main;
 
-import "testing"
+import (
+    "testing"
+)
 
 func TestEmptyArray(t *testing.T) {
 	input := []int{};
@@ -114,5 +116,94 @@ func TestAverageManyPositiveNegativeNumbers(t *testing.T) {
 	if got != want {
 		t.Errorf("wanted %f but got %f", want, got);
 	}
+}
+
+func TestMostFrequentWordsOneWord(t *testing.T) {
+    input := []string{
+        "hello",
+        "world",
+        "hello",
+        "developers",
+    };
+    want := map[string]bool{"hello": true};
+
+    got := mostFrequentWords(input);
+
+    set := make(map[string]bool);
+    for _, w := range got {
+        set[w] = true;
+    }
+    for w, _ := range want {
+        _, ok := want[w];
+        if !ok {
+            t.Errorf("wanted '%v' but got '%v'", want, got);
+        }
+    }
+}
+
+func TestMostFrequentWordsTwoWords(t *testing.T) {
+    input := []string{
+        "hello",
+        "world",
+        "hello",
+        "world",
+    };
+    want := map[string]bool{"hello": true, "world": true};
+
+    got := mostFrequentWords(input);
+
+    set := make(map[string]bool);
+    for _, w := range got {
+        set[w] = true;
+    }
+    for w, _ := range want {
+        _, ok := want[w];
+        if !ok {
+            t.Errorf("wanted '%v' but got '%v'", want, got);
+        }
+    }
+}
+
+func TestMostFrequentWordsEmpty(t *testing.T) {
+    input := []string{};
+    want := map[string]bool{};
+
+    got := mostFrequentWords(input);
+
+    set := make(map[string]bool);
+    for _, w := range got {
+        set[w] = true;
+    }
+    for w, _ := range want {
+        _, ok := want[w];
+        if !ok {
+            t.Errorf("wanted '%v' but got '%v'", want, got);
+        }
+    }
+}
+
+func TestMostFrequentWordsLast(t *testing.T) {
+    input := []string{
+        "a",
+        "a",
+        "c",
+        "b",
+        "b",
+        "b",
+    };
+    want := map[string]bool{"b": true};
+
+    got := mostFrequentWords(input);
+
+    set := make(map[string]bool);
+    for _, w := range got {
+        set[w] = true;
+    }
+    for w, _ := range want {
+        _, ok := want[w];
+        if !ok {
+            t.Errorf("wanted '%v' but got '%v'", want, got);
+        }
+    }
 }
 
