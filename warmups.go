@@ -11,7 +11,7 @@ func average(nums[]int) float64 {
 }
 
 func mostFrequentWords(words []string) []string {
-    // Complete code
-    return []string{};
+	// Complete code
+	return []string{};
 }
 
